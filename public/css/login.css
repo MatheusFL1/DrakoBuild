@@ -1,0 +1,99 @@
+body {
+    font-family: 'Koulen', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+  }
+  
+  .login-container {
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 300px;
+  }
+  
+  .login-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .input-group label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  
+  .input-group input {
+    width: 30vh;
+    padding: 1vh;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #252525;
+    color: white;
+  }
+  
+  button {
+    background-color: #00f7ff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #121212;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #00c4ff;
+  }
+  
+  p {
+    font-size: 0.9rem;
+    margin-top: 15px;
+  }
+  
+  p a {
+    color: #00f7ff;
+    text-decoration: none;
+  }
+  
+  p a:hover {
+    text-decoration: underline;
+  }
+  
+  .button-container {
+    text-align: center;
+    position: absolute;
+  }
+  
+  #nextButton {
+    padding: 15px 30px;
+    font-size: 1.8vw;
+    font-family: 'Koulen', sans-serif; 
+    background-color: #00bfff;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: fixed;
+    bottom: 2vh; 
+    right: 2vw;  
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.8);
+  }
+  
+  #nextButton:hover:enabled {
+    background-color: #009acd;
+  }

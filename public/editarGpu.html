@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DrakoBuild - Editar GPUs</title>
+    <link rel="stylesheet" href="css/editarGpu.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerenciar Configurações de GPUs</h1>
+
+        <div class="config-list">
+            <h2>Configurações Armazenadas</h2>
+            <div id="gpusArmazenadas"></div>
+        </div>
+
+        <div class="formulario">
+            <h2>Inserir/Alterar Configuração de GPU</h2>
+            <form onsubmit="modificarGpu(event)">
+                <input type="hidden" id="idGpu">
+
+                <label for="categoriaEditar">Categoria:</label>
+                <select id="categoriaEditar" required>
+                    <option value="Low">Low</option>
+                    <option value="Medium">Medium</option>
+                    <option value="High">High</option>
+                    <option value="Highend">HighEnd</option>
+                    <option value="Enthusiastic">Enthusiastic</option>
+                </select><br>
+
+                <label for="placaEditar">Placa de Vídeo:</label>
+                <input type="text" id="placaEditar" required><br>
+
+                <label for="fonteEditar">Fonte:</label>
+                <input type="text" id="fonteEditar" required><br>
+
+                <button type="submit">Salvar Configuração</button>
+                <button type="button" onclick="limparFormularioGpu()">Limpar</button>
+            </form>
+        </div>
+    </div>
+    <div class="button-container">
+        <button id="nextButton" onclick="goBackToStart()">Voltar</button>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/editarGpu.js"></script>
+</body>
+</html>

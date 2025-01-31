@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DrakoBuild - Editar Configuração</title>
+    <link rel="stylesheet" href="css/editarConfig.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerenciar Configurações de Hardware</h1>
+
+        <div class="config-list">
+            <h2>Configurações Armazenadas</h2>
+            <div id="configuracoesArmazenadas"></div>
+        </div>
+
+        <div class="formulario">
+            <h2>Inserir/Alterar Configuração</h2>
+
+            <form onsubmit="modificarConfig(event)">
+                <input type="hidden" id="id">
+                
+                <label for="categoriaEditar">Categoria:</label>
+                <select id="categoriaEditar" required>
+                    <option value="Low">Low</option>
+                    <option value="Medium">Medium</option>
+                    <option value="High">High</option>
+                    <option value="Enthusiastic">Enthusiastic</option>
+                </select><br>
+
+                <label for="processadorEditar">Processador:</label>
+                <input type="text" id="processadorEditar" required><br>
+
+                <label for="placaMaeEditar">Placa Mãe:</label>
+                <input type="text" id="placaMaeEditar" required><br>
+
+                <label for="memoriaEditar">Memoria:</label>
+                <input type="text" id="memoriaEditar" required><br>
+
+                <label for="coolerEditar">Cooler:</label>
+                <input type="text" id="coolerEditar" required><br>
+
+                <button type="submit">Salvar Configuração</button>
+                <button type="button" onclick="limparFormulario()">Limpar</button>
+            </form>
+        </div>
+    </div>
+    <div class="button-container">
+        <button id="nextButton" onclick="goBackToStart()">Voltar</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/editarConfig.js"></script>
+</body>
+</html>

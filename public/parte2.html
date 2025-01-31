@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DrakoBuild</title>
+  <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles2.css">
+  <link rel="stylesheet" href="css/header.css">
+  
+</head>
+<body>
+
+  <div id="header"></div>
+
+  <div class="content">
+    <h2>desempenho</h2>
+ 
+
+  <div class="dropdowns-container">
+    <div class="dropdown">
+      <button class="dropbtn">FRAMERATE</button>
+      <div class="dropdown-content">
+        <label><input type="radio" name="menufps" value="fps1" onchange="checkSelections()">60 FPS</label><br>
+        <label><input type="radio" name="menufps" value="fps2" onchange="checkSelections()">144 FPS</label><br>
+        <label id="multiplayer-options"><input type="radio" name="menufps" value="fps3" onchange="checkSelections()">240 FPS</label><br>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn">GRAFICOS</button>
+      <div class="dropdown-content">
+        <label><input type="radio" name="menugraf" value="min" onchange="checkSelections()">MINIMOS</label><br>
+        <label><input type="radio" name="menugraf" value="med" onchange="checkSelections()">EQUILIBRADOS</label><br>
+        <label><input type="radio" name="menugraf" value="max" onchange="checkSelections()">MAXIMOS</label><br>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn">RESOLUCAO</button>
+      <div class="dropdown-content">
+        <label><input type="radio" name="menures" value="fullhd" onchange="checkSelections()">1920 x 1080</label><br>
+        <label><input type="radio" name="menures" value="2k" onchange="checkSelections()">2k 2560 x 1440</label><br>
+        <label id="singleplayer-options"><input type="radio" name="menures" value="4k" onchange="checkSelections()">4k 3840 x 2160</label><br>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="button-container">
+    <button id="nextButton" disabled onclick="goToNextPage()">Prosseguir</button>
+  </div>
+
+  <script src="js/header.js"></script>
+  <script src="js/functions2.js"></script>
+  
+</body>
+</html>

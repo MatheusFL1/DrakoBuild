@@ -1,0 +1,127 @@
+body {
+  background-image: url("../images/Fundo2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Koulen', sans-serif; 
+  text-transform: uppercase; 
+}
+
+html {
+  height: 100%;
+  margin: 0;
+  overflow: hidden; 
+}
+
+.content {
+  font-size: 3vw;
+  text-shadow: 0.4vw 0.4px 4px rgba(0, 0, 0, 0.74);
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column; 
+  height: 100%;
+}
+
+.dropdowns-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  gap: 20px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.8);
+}
+
+.dropbtn {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 14px 20px;
+  font-size: 1.8vw;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  font-family: 'Koulen', sans-serif; 
+  font-size: 2vw;
+  width: 20vw;
+  
+}
+
+.dropbtn:hover {
+  background-color: #e9e9e9;
+}
+
+.dropdown-content {
+  display: none; 
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 20vw;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.8);
+  z-index: 1;
+  border-radius: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.8vw;
+  color: black;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+  
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.button-container {
+  text-align: center;
+  position: absolute;
+}
+
+#nextButton {
+  padding: 15px 30px;
+  font-size: 1.8vw;
+  font-family: 'Koulen', sans-serif; 
+  background-color: #00bfff;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  position: fixed;
+  bottom: 2vh; 
+  right: 2vw;  
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.8);
+}
+
+#nextButton:disabled {
+  background-color: #00bfd8;
+  cursor: not-allowed;
+}
+
+#nextButton:hover:enabled {
+  background-color: #009acd;
+}
+
+label.disabled-option {
+  opacity: 0.6;  
+}

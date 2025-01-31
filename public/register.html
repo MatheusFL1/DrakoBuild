@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro - DrakoBuild</title>
+  <link rel="stylesheet" href="css/login.css">
+  <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="login-container">
+    <h1>Cadastro</h1>
+    <form id="registerForm">
+      <div class="input-group">
+        <label for="username">Usuário</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="input-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="input-group">
+        <label for="password">Senha</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="input-group">
+        <label for="confirmPassword">Confirme sua Senha</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+      </div>
+      <button type="submit">Cadastrar</button>
+    </form>
+    <p>Já tem uma conta? <a href="login.html">Faça login</a></p>
+  </div>
+  <div class="button-container">
+    <button id="nextButton" onclick="goBackToStart()">Voltar</button>
+  </div>
+  <script src="js/register.js"></script>
+</body>
+</html>

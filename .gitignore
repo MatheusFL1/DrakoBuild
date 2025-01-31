@@ -1,0 +1,24 @@
+# Ignorar a pasta de dependências do Node.js
+node_modules/
+
+# Ignorar variáveis de ambiente (credenciais do MongoDB, APIs, etc.)
+.env
+
+# Ignorar arquivos do VS Code (configurações do editor)
+.vscode/
+
+# Ignorar logs e cache do sistema
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignorar arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Ignorar pacotes travados
+package-lock.json
+
+# Ignorar arquivos de build temporários
+dist/

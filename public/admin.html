@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DrakoBuild</title>
+  <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/admin.css">
+  
+</head>
+<body>
+
+  <div class="content">
+    <h2>ADMINISTRADOR</h2>
+    <div class="dropdown">
+        <button class="dropbtn">EDITAR</button>
+        <div class="dropdown-content">
+            <a onclick="window.location.href = 'editarGpu.html'">Placa de video</a>
+            <a onclick="window.location.href = 'editarConfig.html'">Configuracao</a>
+        </div>
+    </div>
+</div>
+<div class="button-container">
+  <button id="logoutButton">Sair</button>
+</div>
+<div class="button-container">
+  <button id="nextButton" onclick="goBackToStart()">Ir para o site</button>
+</div>
+
+<script src="js/admin.js"></script>
+</body>
+</html>
+
+

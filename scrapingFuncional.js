@@ -5,7 +5,7 @@ const puppeteer = require('puppeteer');
   const page = await browser.newPage();
 
   const listaDeProdutos = [
-    'corsair 600w'
+    '2x16gb ddr5'
   ];
 
   const produtosEncontrados = [];

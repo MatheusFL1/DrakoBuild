@@ -2,7 +2,7 @@ const configArray = JSON.parse(localStorage.getItem('configArray'));
 
 document.addEventListener('DOMContentLoaded', async () => {
   if (!configArray) {
-    console.error('Erro ao buscar configArray do localStorage.');
+    console.error('Erro ao buscar config Array do localStorage.');
     return;
   }
 

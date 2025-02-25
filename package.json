@@ -5,7 +5,6 @@
   "dependencies": {
     "asynckit": "^0.4.0",
     "axios": "^1.7.9",
-    "bcrypt": "^5.1.1",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.3",
     "boolbase": "^1.0.0",
@@ -39,7 +38,7 @@
     "parse5-htmlparser2-tree-adapter": "^7.1.0",
     "parse5-parser-stream": "^7.1.2",
     "proxy-from-env": "^1.1.0",
-    "puppeteer": "^24.1.1",
+    "puppeteer": "^24.3.0",
     "safer-buffer": "^2.1.2",
     "undici": "^6.20.1",
     "whatwg-encoding": "^3.1.1",

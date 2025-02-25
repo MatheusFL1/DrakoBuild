@@ -5,7 +5,7 @@ const puppeteer = require('puppeteer');
   const page = await browser.newPage();
 
   const listaDeProdutos = [
-    '2x16gb ddr5'
+    'RTX 4070'
   ];
 
   const produtosEncontrados = [];

@@ -26,10 +26,10 @@ document.addEventListener('DOMContentLoaded', async function () {
 
         const configArray = [
             { item: 'PROCESSADOR', value: data.cpu.processador },
-            { item: 'PLACA MAE', value: data.cpu.placaMae },
-            { item: 'MEMORIA', value: data.cpu.memoria },
-            { item: 'REFRIGERACAO', value: data.cpu.cooler },
-            { item: 'PLACA DE VIDEO', value: data.gpu.placaVideo },
+            { item: 'PLACA MÃE', value: data.cpu.placaMae },
+            { item: 'MEMÓRIA', value: data.cpu.memoria },
+            { item: 'REFRIGERAÇÃO', value: data.cpu.cooler },
+            { item: 'PLACA DE VÍDEO', value: data.gpu.placaVideo },
             { item: 'FONTE', value: data.gpu.fonte }
         ];
 
@@ -43,22 +43,22 @@ document.addEventListener('DOMContentLoaded', async function () {
             </div>
             <div class="item">
                 <img src="images/mobo.png" alt="Placa Mãe" class="item-image">
-                <p class="item-name">PLACA MAE:</p>
+                <p class="item-name">PLACA MÃE:</p>
                 <p class="item-info">${data.cpu.placaMae}</p>
             </div>
             <div class="item">
                 <img src="images/mem.png" alt="Memória" class="item-image">
-                <p class="item-name">MEMORIA:</p>
+                <p class="item-name">MEMÓRIA:</p>
                 <p class="item-info">${data.cpu.memoria}</p>
             </div>
             <div class="item">
                 <img src="images/wc.png" alt="WaterCooler" class="item-image">
-                <p class="item-name">REFRIGERACAO:</p>
+                <p class="item-name">REFRIGERAÇÃO:</p>
                 <p class="item-info">${data.cpu.cooler}</p>
             </div>
              <div class="item">
                 <img src="images/gpu.png" alt="Placa de Vídeo" class="item-image">
-                <p class="item-name">PLACA DE VIDEO:</p>
+                <p class="item-name">PLACA DE VÍDEO:</p>
                 <p class="item-info">${data.gpu.placaVideo}</p>
             </div>
             <div class="item">

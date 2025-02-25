@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body {
   display: flex;
   justify-content: center;
@@ -9,7 +10,9 @@ body {
   background-repeat: no-repeat;
   height: 100vh;
   margin: 0;
-  font-family: 'Koulen', sans-serif; 
+  font-family: "Barlow Condensed", serif;
+  font-weight: 700;
+  font-style: normal;
   text-transform: uppercase; 
 }
 
@@ -21,8 +24,8 @@ html {
 
 .content {
   color: white;
-  font-size: 3vw;
-  text-shadow: 0.1vw 0.1vw 2px rgba(0, 0, 0, 0.74);
+  font-size: 4vw;
+  text-shadow: 0.4vw 0.4px 4px rgba(0, 0, 0, 0.74);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,7 +50,7 @@ html {
   border: 2px solid #000000;
   border-radius: 10px;
   padding: 10px;
-  background-color: #00576d;
+  background-color: #004e6b;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -59,17 +62,17 @@ html {
 }
 
 .item-name {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   text-decoration: underline;  
   color: #ffffff;
   text-shadow: none;
-  font-weight: lighter;
+  font-weight: 600;
 }
 .item-info {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #ffffff;
   text-shadow: none;
-  font-weight: lighter;
+  font-weight: 400;
 }
 
 .button-container {
@@ -80,9 +83,11 @@ html {
 #nextButton {
   padding: 15px 30px;
   font-size: 1.8vw;
-  font-family: 'Koulen', sans-serif; 
-  background-color: #00bfff;
-  color: rgb(0, 0, 0);
+  font-family: "Barlow Condensed", serif;
+  font-weight: 500;
+  font-style: normal;
+  background-color: #009acd;
+  color: rgb(255, 255, 255);
   border: none;
   border-radius: 20px;
   cursor: pointer;

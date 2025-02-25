@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body {
   background-image: url("../images/Fundo2.png");
   background-size: cover;
@@ -5,7 +6,9 @@ body {
   background-repeat: no-repeat;
   height: 100vh;
   margin: 0;
-  font-family: 'Koulen', sans-serif; 
+  font-family: "Barlow Condensed", serif;
+  font-weight: 700;
+  font-style: normal;
   text-transform: uppercase; 
 }
 
@@ -17,16 +20,17 @@ html {
 
 .content {
   font-size: 3vw;
+  text-shadow: 0.4vw 0.4px 4px rgba(0, 0, 0, 0.74);
   position: absolute;
   top: 30%;
   left: 50%;
-  transform: translate(-50%, -50%); 
+  transform: translate(-50%, -50%);
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  flex-direction: column; 
+  flex-direction: column;
   height: 100%;
 }
 
@@ -44,28 +48,32 @@ html {
 }
 
 .dropbtn {
-  background-color: #ffffff;
-  color: rgb(0, 0, 0);
+  background-color: #004e6b;
+  color: rgb(255, 255, 255);
   padding: 14px 20px;
   font-size: 1.8vw;
   border: none;
   border-radius: 10px;
   cursor: pointer;
   text-align: center;
-  font-family: 'Koulen', sans-serif; 
+  font-family: "Barlow Condensed", serif;
+  font-weight: 500;
+  font-style: normal;
   font-size: 2vw;
   width: 20vw;
   
 }
 
 .dropbtn:hover {
-  background-color: #e9e9e9;
+  background-color: #004863;
 }
 
 .dropdown-content {
   display: none; 
+  font-weight: 500;
+  font-style: normal;
   position: absolute;
-  background-color: #f1f1f1;
+  background-color: #004e6b;
   min-width: 20vw;
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.8);
   z-index: 1;
@@ -73,7 +81,8 @@ html {
   left: 50%;
   transform: translateX(-50%);
   font-size: 1.8vw;
-  color: black;
+  text-shadow: none;
+  color: rgb(255, 255, 255);
 }
 
 .dropdown-content a {
@@ -99,9 +108,12 @@ html {
 #nextButton {
   padding: 15px 30px;
   font-size: 1.8vw;
-  font-family: 'Koulen', sans-serif; 
-  background-color: #00bfff;
-  color: rgb(0, 0, 0);
+  font-family: "Barlow Condensed", serif;
+  font-weight: 500;
+  font-style: normal;
+  text-transform: uppercase;
+  background-color: #004863;
+  color: rgb(255, 255, 255);
   border: none;
   border-radius: 20px;
   cursor: pointer;
@@ -113,7 +125,7 @@ html {
 }
 
 #nextButton:disabled {
-  background-color: #00bfd8;
+  background-color: #009acd;
   cursor: not-allowed;
 }
 
